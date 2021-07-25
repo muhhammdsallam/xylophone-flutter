@@ -25,7 +25,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(1);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.red),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade700),
                   ),
                 ),
                 Expanded(
@@ -34,7 +35,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(2);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.orange),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade600),
                   ),
                 ),
                 Expanded(
@@ -43,7 +45,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(3);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.yellow),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade500),
                   ),
                 ),
                 Expanded(
@@ -52,7 +55,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(4);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.green),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade400),
                   ),
                 ),
                 Expanded(
@@ -61,7 +65,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(5);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.teal),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade300),
                   ),
                 ),
                 Expanded(
@@ -70,7 +75,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(6);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.blue),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade200),
                   ),
                 ),
                 Expanded(
@@ -79,7 +85,8 @@ class XylophoneApp extends StatelessWidget {
                       playSound(7);
                     },
                     child: Text(''),
-                    style: TextButton.styleFrom(backgroundColor: Colors.purple),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.grey.shade100),
                   ),
                 ),
               ],
