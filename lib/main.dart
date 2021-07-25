@@ -29,6 +29,10 @@ class XylophoneApp extends StatelessWidget {
                         backgroundColor: Colors.grey.shade700),
                   ),
                 ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
+                ),
                 Expanded(
                   child: TextButton(
                     onPressed: () {
@@ -38,6 +42,10 @@ class XylophoneApp extends StatelessWidget {
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.grey.shade600),
                   ),
+                ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
                 ),
                 Expanded(
                   child: TextButton(
@@ -49,6 +57,10 @@ class XylophoneApp extends StatelessWidget {
                         backgroundColor: Colors.grey.shade500),
                   ),
                 ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
+                ),
                 Expanded(
                   child: TextButton(
                     onPressed: () {
@@ -58,6 +70,10 @@ class XylophoneApp extends StatelessWidget {
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.grey.shade400),
                   ),
+                ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
                 ),
                 Expanded(
                   child: TextButton(
@@ -69,6 +85,10 @@ class XylophoneApp extends StatelessWidget {
                         backgroundColor: Colors.grey.shade300),
                   ),
                 ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
+                ),
                 Expanded(
                   child: TextButton(
                     onPressed: () {
@@ -78,6 +98,10 @@ class XylophoneApp extends StatelessWidget {
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.grey.shade200),
                   ),
+                ),
+                SizedBox(
+                  height: 5.0,
+                  child: Blackbox(),
                 ),
                 Expanded(
                   child: TextButton(
@@ -93,6 +117,17 @@ class XylophoneApp extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class Blackbox extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.black,
       ),
     );
   }
