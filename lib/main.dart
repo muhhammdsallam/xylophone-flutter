@@ -9,110 +9,50 @@ class XylophoneApp extends StatelessWidget {
     player.play('note$number.wav');
   }
 
+  Expanded buildbutton({int soundnumber, Color color}) {
+    return Expanded(
+      child: ElevatedButton(
+        onPressed: () {
+          playSound(soundnumber);
+        },
+        child: Text(''),
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(color)),
+      ),
+    );
+  }
+
+  SizedBox buildsizedBox() {
+    return SizedBox(
+      height: 5.0,
+      child: Blackbox(),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(1);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade700),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(2);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade600),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(3);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade500),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(4);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade400),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(5);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade300),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(6);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade200),
-                  ),
-                ),
-                SizedBox(
-                  height: 5.0,
-                  child: Blackbox(),
-                ),
-                Expanded(
-                  child: TextButton(
-                    onPressed: () {
-                      playSound(7);
-                    },
-                    child: Text(''),
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.grey.shade100),
-                  ),
-                ),
+                buildbutton(soundnumber: 1, color: Colors.grey.shade700),
+                buildsizedBox(),
+                buildbutton(soundnumber: 2, color: Colors.grey.shade600),
+                buildsizedBox(),
+                buildbutton(soundnumber: 3, color: Colors.grey.shade500),
+                buildsizedBox(),
+                buildbutton(soundnumber: 4, color: Colors.grey.shade400),
+                buildsizedBox(),
+                buildbutton(soundnumber: 5, color: Colors.grey.shade300),
+                buildsizedBox(),
+                buildbutton(soundnumber: 6, color: Colors.grey.shade200),
+                buildsizedBox(),
+                buildbutton(soundnumber: 7, color: Colors.grey.shade100),
               ],
             ),
           ),
